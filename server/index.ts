@@ -4,8 +4,14 @@ import cors, { CorsOptions } from 'cors';
 const app: Express = express();
 const port = 8000;
 
-// 배포 시 origin 수정 필요(해당 도메인으로)
-app.use(cors({ origin: true, credentials: true }));
+const corsOptions: CorsOptions = {
+  // 클라이언트 도메인으로 변경
+  origin: true,
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+app.use(express.json());
 
 app.get('/', (req: Request, res: Response) => {
   res.send('express server');
