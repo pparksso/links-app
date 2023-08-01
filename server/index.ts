@@ -1,5 +1,8 @@
-import express, { Express, Request, Response } from 'express';
+import express, { Express, Request, Response, NextFunction } from 'express';
 import cors, { CorsOptions } from 'cors';
+import userRouter from './routes/user';
+import categoryRouter from './routes/category';
+import linkRouter from './routes/link';
 
 const app: Express = express();
 const port = 8000;
@@ -12,6 +15,15 @@ const corsOptions: CorsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+app.use('/user', userRouter);
+app.use('/category', categoryRouter);
+app.use('/link', linkRouter);
+
+app.use(function (err: any, req: Request, res: Response, next: NextFunction) {
+  res.status(err.status || 500);
+  res.send(err.message);
+});
 
 app.get('/', (req: Request, res: Response) => {
   res.send('express server');
