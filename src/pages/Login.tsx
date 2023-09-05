@@ -4,14 +4,14 @@ import SnsBtns from '@comp/login/SnsBtns';
 
 const Login = () => {
   return (
-    <div className="layout">
-      <div className="container">
+    <div className="login">
+      <div className="login-container">
         <div className="login-wrap">
-          <div className="login-title">
+          <div className="login__title">
             <img src={iconImg} alt="LINKS" />
             <span>LINKS</span>
           </div>
-          <div className="login-container">
+          <div className="login__input-wrap">
             <div className="login-desc">
               <h1>Hello</h1>
               <p>Sign in to your account</p>
