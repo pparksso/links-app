@@ -1,26 +1,29 @@
 import iconImg from '@img/main_icon.png';
 import Inputs from '@comp/login/Inputs';
 import SnsBtns from '@comp/login/SnsBtns';
+import * as S from '@/styles/login.style';
 
 const Login = () => {
   return (
     <div className="login">
-      <div className="login-container">
-        <div className="login-wrap">
-          <div className="login__title">
-            <img src={iconImg} alt="LINKS" />
+      <S.container>
+        <S.wrap>
+          <S.title>
+            <div className="img-box">
+              <img src={iconImg} alt="LINKS" />
+            </div>
             <span>LINKS</span>
-          </div>
-          <div className="login__input-wrap">
-            <div className="login-desc">
+          </S.title>
+          <S.inputBox>
+            <S.descBox>
               <h1>Hello</h1>
               <p>Sign in to your account</p>
-            </div>
+            </S.descBox>
             <SnsBtns />
             <Inputs />
-          </div>
-        </div>
-      </div>
+          </S.inputBox>
+        </S.wrap>
+      </S.container>
     </div>
   );
 };

@@ -15,10 +15,14 @@ html {
 h1, h2, h3, h4, p, span, button, input, textarea, select, a, div {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: normal;
+    vertical-align: baseline;
 }
 body {
     overflow-x: hidden;
-    line-height: 1.2;
 }
 a {
     text-decoration: none;
@@ -32,5 +36,12 @@ button {
 button, input {
     border: none;
     outline: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.img-box {
+    width: 100%;
 }
 `;
