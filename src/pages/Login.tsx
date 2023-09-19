@@ -20,6 +20,7 @@ const Login = () => {
               <p>Sign in to your account</p>
             </S.descBox>
             <SnsBtns />
+            <p>or use your id</p>
             <Inputs />
           </S.inputBox>
         </S.wrap>

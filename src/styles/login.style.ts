@@ -46,9 +46,34 @@ export const inputBox = styled.div`
 `;
 
 export const descBox = styled.div`
+  margin-bottom: 27px;
   h1 {
     font-size: 2.5em;
     font-weight: 900;
     color: #313f48;
   }
+  p {
+    color: #b5bab8;
+    font-weight: 300;
+  }
 `;
+
+export const snsBoxComp = styled.div`
+  display: flex;
+  margin-bottom: 12px;
+  div {
+    width: 70px;
+    height: 70px;
+  }
+  .img-box:nth-child(2) {
+    margin: 0 9px;
+  }
+  button {
+    height: 100%;
+  }
+  img {
+    width: 70px;
+  }
+`;
+
+export const inputsComp = styled.div``;

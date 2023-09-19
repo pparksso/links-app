@@ -11,16 +11,10 @@ ${reset}
 }
 html {
     font-size: 16px;
-}
-h1, h2, h3, h4, p, span, button, input, textarea, select, a, div {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: normal;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    line-height: normal;
-    vertical-align: baseline;
 }
+
 body {
     overflow-x: hidden;
 }
@@ -29,7 +23,7 @@ a {
     color: inherit
 }
 button {
-    padding: none;
+    padding: 0;
     cursor: pointer;
     background: none;
 }
